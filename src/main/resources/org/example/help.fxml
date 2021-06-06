@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="550.0" spacing="50.0" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.MainSceneController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Практически для всех операций необходимо знать ID пользователя либо ID аккаунта" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="В системе изначально зарегестрировано 2 пользователя, для проверки" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Для этих пользователей уже открыты банковские аккаунты" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID этих пользователей и аккаунтов можно узнать в &quot;Сводка информации&quot;" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Также, для тестирования Импорта, в папке Users лежит готовый файл пользователя" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Имя файла - user2" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="В разделе импорта нужно ввести полное имя файла в текстовом формате(без .txt)" />
+      <Button mnemonicParsing="false" onAction="#switchToMenu" text="Назад" />
+   </children>
+</VBox>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="550.0" spacing="20.0" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.InfoUnitController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Импорт аккаунтов и пользователей" />
+        <Label text="Импорт пользователя:">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin></Label>
+      <Label text="Поместите файл пользователя в папку Users в текстовом формате" />
+        <HBox alignment="CENTER">
+            <children>
+                <Label text="Введите имя файла:">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Label>
+                <TextField fx:id="userIdReader">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></TextField>
+                <Button mnemonicParsing="false" onAction="#readUser" text="Импорт">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></Button>
+            </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </HBox>
+      <Label fx:id="importAccExc" />
+        <Button mnemonicParsing="false" onAction="#switchToInfoUnit" text="Назад">
+         <VBox.margin>
+            <Insets top="100.0" />
+         </VBox.margin></Button>
+    </children>
+</VBox>
